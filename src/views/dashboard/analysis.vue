@@ -1,6 +1,6 @@
 <template>
-  <div>
-    Login
+  <div class="home">
+    analysis
   </div>
 </template>
 
@@ -9,9 +9,4 @@ export default {
   
 }
 </script>
-
-<style lang="less" scoped>
-
-</style>
-
 

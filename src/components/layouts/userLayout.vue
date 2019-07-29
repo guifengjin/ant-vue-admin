@@ -1,6 +1,7 @@
 <template>
   <div>
-    Login
+    <div class="desc">Vue Antd Admin</div>
+    <router-view></router-view>
   </div>
 </template>
 

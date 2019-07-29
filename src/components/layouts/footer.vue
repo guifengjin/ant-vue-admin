@@ -1,6 +1,6 @@
 <template>
   <div>
-    Login
+    footer
   </div>
 </template>
 
@@ -9,9 +9,4 @@ export default {
   
 }
 </script>
-
-<style lang="less" scoped>
-
-</style>
-
 

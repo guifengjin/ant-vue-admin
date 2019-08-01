@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 Vue.use(Router)
+Vue.use(NProgress)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -54,6 +57,20 @@ export default new Router({
           component: () => import('@/views/form/stepForm')
         }]
       }]
-    },
+    }, {
+      path: '*',
+      component: () => import('@/views/404')
+    }
   ]
 })
+
+router.beforeEach((to, from, next) => {
+  NProgress.start();
+  next()
+})
+
+router.afterEach(route => {
+  NProgress.done()
+})
+
+export default router;

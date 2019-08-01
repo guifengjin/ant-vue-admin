@@ -1,5 +1,8 @@
 <template>
   <div>
-    sider
+    Sider
   </div>
 </template>
+
+<style lang="less" scoped>
+</style>
